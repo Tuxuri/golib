@@ -16,4 +16,4 @@ func (p TimeSlice) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 func (p TimeSlice) Sort() { sort.Sort(p) }
 
 // Reverse is a convenience method.
-func (p TimeSlice) Reverse() { sort.Reverse(p) }
+func (p TimeSlice) Reverse() { sort.Sort(sort.Reverse(p)) }
